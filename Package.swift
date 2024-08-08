@@ -28,16 +28,12 @@ let package = Package(
                 "CryptoSwift",
                 .product(name: "secp256k1", package: "swift-secp256k1"),
                 "OpenSSL",
-                "CryptoEthereumSwiftPrivate"
+                "CryptoEthereumSwiftInternal"
             ]
         ),
         .target(
-            name: "CryptoEthereumSwiftPrivate",
-            dependencies: ["OpenSSL"],
-            path: "Sources/Internal",
-            exclude: [],
-            sources: ["Internal.h"],
-            publicHeadersPath: ""
+            name: "CryptoEthereumSwiftInternal",
+            dependencies: ["OpenSSL"]
         ),
         .testTarget(
             name: "CryptoEthereumSwiftTests",

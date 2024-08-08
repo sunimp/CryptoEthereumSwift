@@ -1,4 +1,4 @@
-#import "Internal.h"
+#import "CryptoEthereumSwiftInternal.h"
 #import <openssl/sha.h>
 #import <openssl/ripemd.h>
 #import <openssl/hmac.h>

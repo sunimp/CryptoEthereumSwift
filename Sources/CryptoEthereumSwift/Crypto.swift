@@ -1,5 +1,5 @@
 import Foundation
-import CryptoEthereumSwiftPrivate
+import CryptoEthereumSwiftInternal
 import secp256k1
 import CryptoSwift
 
